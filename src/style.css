@@ -1,6 +1,164 @@
-html{
-    box-sizing: border-box;
-    font-family: sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: san-serif;
+    
+}
+
+#app{
+    display: flex;
     font-size: 16px;
-    background-color: #2b3a42;
+    background: #565656;
+    width: 100vw;
+    height: 100vh;
+}
+
+#left-view{
+    flex-grow: 0;
+    background: #fafafa;
+    height: 100vh;
+    flex-basis: 50vw;
+    box-shadow: rgba(255, 0, 0, 0.55) 5px 2px 20px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    order: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    margin: auto;
+    background: #C4C4C4;
+    box-shadow: 0px 0px 45px 5px rgba(255, 0, 0, 0.3);
+    border-radius: 100%;
+    /*width: 400px;
+    height: 400px;*/
+    height: 380px;
+    flex-basis: 380px;
+    display: flex;
+}
+
+.timer{
+    margin:auto;
+    width: 360px;
+    height: 360px;
+    border-radius: 100%;
+    background: #FF7777;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.35);
+    text-align: center;
+}
+
+.timer h2{
+    margin: auto;
+}
+
+#right-view{
+    order: 100;
+    flex-basis:50vw;
+    height: 100vh;
+    flex-grow: 1;
+    background: #565656;
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 10px;
+}
+
+#top__button{
+
+    margin: 10px 0 0;
+    border: none;
+    width: 210px;
+    height: 43px;
+    background: #FF7777;
+    box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.45);
+    border-radius: 8px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: box-shadow 0.20s ease-in-out;
+}
+
+#top__button:hover{
+    cursor: pointer;
+    box-shadow: 0px 1px 15px 5px rgba(255, 50, 50, 0.85);
+}
+
+#top__button:active{
+    background: #cc5555;
+}
+
+.toDo{
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.toDo__bar{
+    max-width: 75%;
+    padding: 0px 15px;
+    height: 45px;
+    margin: 30px auto;
+    background: #FFBBBB;
+    border: 3.5px solid #CC2222;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.75);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toDo__bar h2{
+    font-size: 25px;
+    color: #CC2222;
+    font-weight: bold;
+    flex-grow: 8;
+}
+
+.toDo__bar button{
+    flex-grow: 0;
+    background: none;
+    border: none;
+    color: #cc2222;
+}
+
+.toDo__bar button h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.toDo__bar button h2:hover{
+    cursor: pointer;
+}
+
+.toDo__bar button h2:active{
+    color: #ff6666;
+}
+
+.task{
+    height: 100%;
+}
+
+.over{
+    height: 100%;
+    overflow-y: scroll;
+}
+.over::-webkit-scrollbar {
+    display: none;
+}
+
+.task__card{
+    background: #f8f8f8;
+    border: 1px solid #000000;
+    box-shadow: 0px 5px 20px 2px  rgba(0, 0, 0, 0.35);
+    max-width: 75%;
+    height: 50px;
+    margin: 0px auto 25px;
+    padding: 12px;
+    border-radius: 5px;
 }
