@@ -1,5 +1,5 @@
 import style from "./style.css";
-import cards from "./templateToDoList.js"
+import cardsOrInfo from "./templateToDoList.js"
 import button from "./rightSide.js"
 
 const arr =[1,2,3],
@@ -18,16 +18,14 @@ document.getElementById("app").innerHTML=`
     </div>
 </div>
 <div id="right-view">
-    ${button[0]}
-    <div class="toDo">
-        <div class="toDo__bar">
-            <h2>
-                To Do List:
-            </h2>
-            <button>
-                <h2>+</h2>
-            </button>
-        </div> 
-        ${cards}
-    </div>
+    ${button[1]}
+    ${cardsOrInfo[1]}
 </div>`;
+
+/* Hay que cambiar el toDo de esta seccion, porque para colocar la informacion del pomodoro tiene que estar
+unicamente el boton cambiado.
+
+alli hay que colocar el toDo a como de lugar en el archivo de rightside.js
+
+y colocar dentro de ese otro html para cuando sea la informacion, recuerda tambien agregar al diseño
+el modo oscuro, exitos Caranfa y a seguir codeando con esfuerzo y dedicacion*/
