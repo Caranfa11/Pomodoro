@@ -28,31 +28,101 @@
     align-items: center;
 }
 
-.circle{
+.backgroundCircle{
     margin: auto;
-    background: #C4C4C4;
-    box-shadow: 0px 0px 45px 5px rgba(255, 0, 0, 0.3);
+    background: #b8b8b8;
+    box-shadow: 0px 3px 45px 5px rgba(255, 0, 0, 0.575);
     border-radius: 100%;
-    /*width: 400px;
-    height: 400px;*/
-    height: 380px;
-    flex-basis: 380px;
+    height: 360px;
+    width: 360px;
     display: flex;
 }
 
-.timer{
+.circle__content{
     margin:auto;
-    width: 360px;
-    height: 360px;
+    width: 340px;
+    height: 340px;
     border-radius: 100%;
     background: #FF7777;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.35);
-    text-align: center;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.363);
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
 
-.timer h2{
-    margin: auto;
+.circle__timer{
+    margin: 25px auto 0px;
+    text-align: center;
+    font-size: 75px;
+    color: #ffffff;
 }
+
+.place{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.place__button{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.background__button{
+    background:#ee3333;
+    border-radius: 100%;
+    padding: 15px;
+    margin: 5px 10px;
+    border: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.288);
+}
+
+.background__button:hover{
+    background: #dd1111;
+    cursor: pointer;
+}
+
+.fas{
+    font-size: 35px;
+    color: white;
+}
+
+/*  Style of Checks Pomodoros  */
+
+.pomodoros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pomodoros__check{
+    margin: 30px 12px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pomodoros__check--on{
+    background: #FF7777;
+    border-radius: 100%;
+    border: 0.5px solid rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.40);width: 18px;
+    height: 18px;
+}
+
+.pomodoros__check--off{
+    background: #b8b8b8;
+    border-radius: 100%;
+    border: 0.5px solid rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.40);
+    width: 18px;
+    height: 18px;
+}
+/*  Style of Right Side  */
 
 #right-view{
     order: 100;
@@ -71,7 +141,6 @@
 }
 
 #top__button{
-
     margin: 10px 0 0;
     border: none;
     width: 210px;
@@ -169,14 +238,14 @@
     height: 90%;
     text-align:center;
     display: flex;
-    flex-flow: wrap column;
+    flex-flow: nowrap column;
     justify-content: center;
     align-items: center;
 }
 
 .box__info{
-    margin:30px auto;
-    width:70%;
+    margin:15px 10px;
+    width:75%;
     background: #FFBBBB;
     border: 3px solid #CC2222;
     box-shadow: 0px 0px 0px rgba(255, 0, 0, 0.25);
@@ -184,7 +253,7 @@
 }
 
 .box__info--title{
-    margin:20px;
+    margin:5px 15px;
     display: flex;
     flex-wrap: nowrap;
     justify-content:center;
@@ -198,7 +267,7 @@
 
 .title h2{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 35px;
     text-align: center;
     color: #CC2222;
@@ -214,7 +283,7 @@
 .box__info--text{
     font-size:18px;
     font-weight:bold;
-    margin: 25px;
+    margin: 15px;
 }
 
 .box__info--text p{
@@ -223,13 +292,14 @@
 
 .steps__title{
     color: #FFF;
+    letter-spacing: 2px;
     font-size: 20px;
     font-weight: bold;
 }
 
 .box__steps{
-    margin: 10px auto;
-    width:75%;
+    margin: 15px auto 0;
+    width:80%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -237,7 +307,7 @@
 
 .step{
     width: 238px;
-    height: 84px;
+    height: 80px;
     margin: 10px auto;
     background: #FFBBBB;
     border: 3px solid #CC2222;
@@ -251,7 +321,7 @@
 
 .step__number{
     color:#ffffff;
-    font-size:25px;
+    font-size:35px;
     margin:10px 0px;
     width:40%;
     height:100%;
