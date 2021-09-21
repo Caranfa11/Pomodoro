@@ -9,7 +9,7 @@ const timer = [`
             </div>
             <div class="place">
                 <div class="place__button">
-                    ${buttons[1]}
+                    ${buttons[0]}
                 </div>
             </div>
         </div>
