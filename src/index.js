@@ -11,10 +11,11 @@ console.log("Hello World without Webpack");
 codeESNext();
 
 document.getElementById("app").innerHTML=`
-<div id="left-view">
-    ${timerChecks[0]}
-</div>
-<div id="right-view">
-    ${button[1]}
-    ${cardsOrInfo[1]}
-</div>`;
+    <div id="left-view">
+        ${timerChecks[0]}
+    </div>
+    <div id="right-view">
+        ${button[0]}
+        ${cardsOrInfo[0]}
+    </div>
+`;

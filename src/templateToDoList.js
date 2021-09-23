@@ -5,7 +5,7 @@ const info = [`
 <div class="toDo">
     <div class="toDo__bar">
         <h2>
-            To Do List:
+            To Do List
         </h2>
         <button>
             <h2>+</h2>
@@ -14,12 +14,119 @@ const info = [`
     <div class="task">
         <div class="over">
             <div class="task__card">
-                <h2>
-                    Title:
-                </h2>
-                <h3>
-                    Description:
-                </h3>
+                <div class="task__card__div">
+                    <div class="task__card--title">
+                        <h2>
+                            Task
+                        </h2>
+                        <input type=text class="task__inputs"></input>
+                    </div>
+                    <div class="task__card--description">
+                        <h3>
+                            Description
+                        </h3>
+                        <textarea class="task__inputs"></textarea>
+                    </div>
+                </div>
+                <div class="task__card__div--icon">
+                    <div class="task__card__icon">
+                        <input type="checkbox" id="task__check">
+                        <i class="fas fa-pen" id="edit"></i>
+                        <i class="fas fa-trash-alt" id="delete"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="task__card">
+                <div class="task__card__div">
+                    <div class="task__card--title">
+                        <h2>
+                            Task
+                        </h2>
+                        <input type=text class="task__inputs"></input>
+                    </div>
+                    <div class="task__card--description">
+                        <h3>
+                            Description
+                        </h3>
+                        <textarea class="task__inputs"></textarea>
+                    </div>
+                </div>
+                <div class="task__card__div--icon">
+                    <div class="task__card__icon">
+                        <input type="checkbox" id="task__check">
+                        <i class="fas fa-pen" id="edit"></i>
+                        <i class="fas fa-trash-alt" id="delete"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="task__card">
+                <div class="task__card__div">
+                    <div class="task__card--title">
+                        <h2>
+                            Task
+                        </h2>
+                        <input type=text class="task__inputs"></input>
+                    </div>
+                    <div class="task__card--description">
+                        <h3>
+                            Description
+                        </h3>
+                        <textarea class="task__inputs"></textarea>
+                    </div>
+                </div>
+                <div class="task__card__div--icon">
+                    <div class="task__card__icon">
+                        <input type="checkbox" id="task__check">
+                        <i class="fas fa-pen" id="edit"></i>
+                        <i class="fas fa-trash-alt" id="delete"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="task__card">
+                <div class="task__card__div">
+                    <div class="task__card--title">
+                        <h2>
+                            Task
+                        </h2>
+                        <input type=text class="task__inputs"></input>
+                    </div>
+                    <div class="task__card--description">
+                        <h3>
+                            Description
+                        </h3>
+                        <textarea class="task__inputs"></textarea>
+                    </div>
+                </div>
+                <div class="task__card__div--icon">
+                    <div class="task__card__icon">
+                        <input type="checkbox" id="task__check">
+                        <i class="fas fa-pen" id="edit"></i>
+                        <i class="fas fa-trash-alt" id="delete"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="task__card">
+                <div class="task__card__div">
+                    <div class="task__card--title">
+                        <h2>
+                            Task
+                        </h2>
+                        <input type=text class="task__inputs"></input>
+                    </div>
+                    <div class="task__card--description">
+                        <h3>
+                            Description
+                        </h3>
+                        <textarea class="task__inputs"></textarea>
+                    </div>
+                </div>
+                <div class="task__card__div--icon">
+                    <div class="task__card__icon">
+                        <input type="checkbox" id="task__check">
+                        <i class="fas fa-pen" id="edit"></i>
+                        <i class="fas fa-trash-alt" id="delete"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

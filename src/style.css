@@ -172,7 +172,8 @@
     max-width: 75%;
     padding: 0px 15px;
     height: 45px;
-    margin: 30px auto;
+    margin: 30px auto 0;
+    z-index: 100;
     background: #FFBBBB;
     border: 3.5px solid #CC2222;
     box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.75);
@@ -211,10 +212,12 @@
 
 .task{
     height: 100%;
+    margin: 0;
+    z-index: 50;
 }
 
 .over{
-    height: 100%;
+    height: 90%;
     overflow-y: scroll;
 }
 .over::-webkit-scrollbar {
@@ -226,10 +229,101 @@
     border: 1px solid #000000;
     box-shadow: 0px 5px 20px 2px  rgba(0, 0, 0, 0.35);
     max-width: 75%;
-    height: 50px;
     margin: 0px auto 25px;
     padding: 12px;
     border-radius: 5px;
+    display: flex;
+}
+
+.task__card__div{
+    flex-grow: 3;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.task__card--title{
+    display: flex;
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+
+.task__card--title input:focus{
+    outline: none;
+    background: linear-gradient(#f8f8f8, #cfcfcf);
+}
+
+.task__card--description{
+    display: flex;
+    margin: 15px 10px 0;
+    font-size: 13px;
+}
+
+.task__inputs{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin: 0 20px;
+    resize: none;
+    border: none;
+    background: #f8f8f8;
+    border-bottom: 3.1px solid rgb(14, 221, 76);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.task__card--description textarea{
+    text-align: left;
+    font-size: 17px;
+    height: 90px;
+}
+
+.task__card--description textarea:focus{
+    outline: none;
+    background: linear-gradient(#f8f8f8, #ddd);
+}
+
+.task__card__div--icon{
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.task__card__icon{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#edit{
+    color: black;
+    font-size: 15px;
+    margin: auto;
+}
+
+#edit:hover{
+    cursor: pointer;
+}
+
+#delete{
+    color: #F00;
+    font-size: 15px;
+    margin: auto;
+}
+
+#delete:hover{
+    cursor: pointer;
+}
+
+#task__check{
+    margin: auto;
+    background-color: green;
+    /*    We have to find the way to put a green checkbox when its finished  */
+}
+#task__check:hover{
+    cursor: pointer;
 }
 
 /* Style of TemplateToDoList.js */
