@@ -1,15 +1,16 @@
 import buttons from "./buttonsTimer";
+import clock from "./remainingTime"
 
-const timer = [`
+var timer = `
 <div>
     <div class="backgroundCircle">
         <div class="circle__content">
             <div class="circle__timer">
-                <h2 class="timer">25:00<\h2>
+                <spam class="timer" id="clock">00:00<\spam>
             </div>
             <div class="place">
                 <div class="place__button">
-                    ${buttons[0]}
+                    ${clock.buttons}
                 </div>
             </div>
         </div>
@@ -37,6 +38,8 @@ const timer = [`
         </div>
     </div>
 </div>
-`];
+`;
+
+clock.changeDOM;
 
 export default timer

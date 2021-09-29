@@ -276,7 +276,7 @@
 .task__card--description textarea{
     text-align: left;
     font-size: 17px;
-    height: 90px;
+    height: 50px;
 }
 
 .task__card--description textarea:focus{

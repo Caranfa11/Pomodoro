@@ -1,21 +1,14 @@
 import style from "./style.css";
 import cardsOrInfo from "./templateToDoList.js"
 import button from "./rightSide.js"
-import timerChecks from "./leftSide.js"
-
-const arr =[1,2,3],
-codeESNext = () => console.log(...arr);
-
-console.log("Hello World without Webpack");
-
-codeESNext();
+import timer from "./leftSide.js"
 
 document.getElementById("app").innerHTML=`
     <div id="left-view">
-        ${timerChecks[0]}
+        ${timer}
     </div>
     <div id="right-view">
-        ${button[0]}
-        ${cardsOrInfo[0]}
+        ${button[1]}
+        ${cardsOrInfo[1]}
     </div>
 `;

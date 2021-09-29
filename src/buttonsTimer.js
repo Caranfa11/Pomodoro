@@ -1,15 +1,15 @@
 const buttons = [
     `
-    <div class="background__button">
-        <div class="play">
-            <i class="fas fa-play"></i>
-        </div>
-    </div>
-    `,
-    `
     <button class="background__button">
         <div id="pause">
             <i class="fas fa-pause"></i>
+        </div>
+    </button>
+    `,
+    `
+    <button class="background__button">
+        <div id="play">
+            <i class="fas fa-play"></i>
         </div>
     </button>
     <button class="background__button">
@@ -19,5 +19,7 @@ const buttons = [
     </button>
     `,
 ]
+
+
 
 export default buttons;
