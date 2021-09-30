@@ -9,7 +9,7 @@ var timer = `
                 <spam class="timer" id="clock">00:00<\spam>
             </div>
             <div class="place">
-                <div class="place__button">
+                <div class="place__button" id="place__button">
                     ${clock.buttons}
                 </div>
             </div>
